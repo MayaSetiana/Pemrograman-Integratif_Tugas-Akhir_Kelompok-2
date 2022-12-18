@@ -47,7 +47,6 @@
                                         <th scope="col">Berat (KG)</th>
                                         <th scope="col">Qty</th>
                                         <th scope="col">Kode</th>
-                                        <th scope="col">Cek Ongkir</th>
                                         <th scope="col">Edit</th>
                                         <th scope="col">Hapus</th>
                                     </tr>
@@ -60,8 +59,6 @@
                                         <td>{{$b->berat}}</td>
                                         <td>{{$b->qty}}</td>
                                         <td>{{$b->kode}}</td>
-                                        <td class="mx-auto"> <a class="btn btn-primary text-white"
-                                                href="{{url('/cek-ongkir/'.$b->id)}}">Cek Ongkir</a></td>
                                         <td> <a class="btn btn-success text-white"
                                                 href="{{url('/edit/'.$b->id)}}">Edit</a></td>
                                         <td> <a class="btn btn-danger text-white"

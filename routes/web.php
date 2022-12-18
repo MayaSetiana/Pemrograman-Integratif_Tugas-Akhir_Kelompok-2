@@ -15,9 +15,9 @@ use App\Http\Controllers\barangController;
 */
 
 Route::get('/', [barangController::class, 'getAllBarang']);
+Route::post('/add', [barangController::class, 'createBarang']);
 Route::get('/edit/{id}', [barangController::class, 'editBarang']);
 Route::post('/update/{id}', [barangController::class, 'updateBarang']);
-Route::post('/add', [barangController::class, 'createBarang']);
 Route::get('/add-form', [barangController::class, 'showAddForm']);
 Route::get('/delete/{id}', [barangController::class, 'deleteBarang']);
 Route::get('/cek-ongkir/{id}', [barangController::class, 'cekOngkir']);

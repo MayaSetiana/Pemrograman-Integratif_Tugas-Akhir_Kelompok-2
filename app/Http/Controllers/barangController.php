@@ -65,7 +65,7 @@ class barangController extends Controller
             'qty' => $request->qty,
         ];
 
-        $res = $this->client->request('POST', '/insert-product/', [
+        $res = $this->client->request('POST', '/insert-product', [
             'json' => $data,
         ]);
         // dd($res->getBody()->getContents());
